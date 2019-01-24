@@ -1,0 +1,33 @@
+#include"pch.h"
+#include <iostream>
+
+
+using namespace std;
+
+int main(char *aegv[])
+
+{
+  char fam[100], name[100];
+  setlocale(LC_ALL, ".1251");
+  system("color 4");
+   
+  printf("Фамилия в цикле\n\n");
+  
+
+
+
+  printf("Пожалуйста,введите вашу фамилию: ");
+  cin >> fam;
+  printf("Затем,введите свое имя: ");
+  cin >> name;
+
+  for (int i = 0; i < 10; i++)
+
+    //printf(fam, name,i);
+    cout << i << fam << " " << name  << ".  ";
+
+  cout << endl << endl << "\t";
+  system("pause");
+
+  return 0;
+}
